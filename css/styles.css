@@ -175,7 +175,7 @@ section {
    =================================== */
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     position: relative;
     background: linear-gradient(135deg,
@@ -186,31 +186,32 @@ section {
     color: white;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: var(--spacing-xl);
 }
 
 .hero-inner {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: var(--spacing-xl);
     max-width: 1100px;
-    padding: var(--spacing-xl);
+    padding: 0 var(--spacing-xl);
 }
 
 .hero-image {
     flex-shrink: 0;
+    line-height: 0;
 }
 
 .hero-image img {
     max-height: 420px;
     width: auto;
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+    display: block;
 }
 
 .hero-content {
     max-width: 600px;
-    padding: var(--spacing-xl);
+    padding: var(--spacing-xl) 0;
     text-align: left;
 }
 
