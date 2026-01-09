@@ -27,7 +27,7 @@ The page transitions emotionally from professional/clinical at the top to warm/p
 
 ## Page Sections
 1. **Minimal Header Bar** - ORSIF logo + Join button (sticky)
-2. **Hero** - Full-screen with scrubs photo background, name, dates, quote
+2. **Hero** - Compact section with teal line art of Juan on left, memorial text on right. Background uses gradient overlay on scrubs photo. Section height fits content (image flush with bottom).
 3. **Short Story** - Word-for-word from Nola's provided content
 4. **Full Story** - Timeline format with detailed narrative
 5. **Video Tribute** - YouTube embed from Nola Palomar
@@ -72,11 +72,13 @@ Full obituary with additional photos: https://www.dignitymemorial.com/obituaries
 ├── js/
 │   └── app.js              # Scroll animations, fade-in effects
 ├── images/
-│   ├── Dr Palomar 1.jpg    # Scrubs photo (hero)
+│   ├── Dr Palomar 1.jpg    # Scrubs photo (hero background)
 │   ├── Dr Palomar 2.jpg    # Portrait (personal section)
 │   ├── Dr Palomar 3.JPG    # Winery photo
+│   ├── Juan-Palomar_line-art.png  # Teal line art illustration (hero section)
 │   ├── orsif_logo_white.png
 │   └── orsif_logo_tagline_white.png
+├── screenshots/            # Development reference screenshots
 ├── .gitignore
 └── claude.md               # This file
 ```
@@ -98,6 +100,21 @@ Used in "Why It Matters" section:
 - 85% of brain tumors in interventional cardiologists occur on the left side
 - 6.1% lifetime cancer incidence rate
 - 50% dosimeter non-compliance among physicians
+
+## Recent Updates (January 2026)
+
+### Hero Section Redesign
+- Added teal line art illustration (`Juan-Palomar_line-art.png`) to left of memorial text
+- Changed from full-viewport height to compact layout
+- Image and text align at bottom (flex-end)
+- Section bottom is flush with Juan's feet in the illustration
+- Removed scroll indicator (no longer needed with shorter section)
+
+### Hero Section CSS Details
+- Background: Gradient overlay on `Dr Palomar 1.jpg`
+- Gradient colors: `rgba(13, 77, 95, 0.92)` to `rgba(9, 58, 73, 0.88)` (135deg)
+- Flex layout: image left, text right (stacks on mobile)
+- Line art max-height: 420px
 
 ## Future Considerations
 - Additional tribute pages for other physicians affected by occupational radiation
