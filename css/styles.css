@@ -174,7 +174,6 @@ section {
    Hero Section
    =================================== */
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +185,8 @@ section {
         url('../images/Dr Palomar 1.jpg') center center / cover no-repeat;
     color: white;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
+    padding-bottom: var(--spacing-xl);
 }
 
 .hero-inner {
