@@ -1,0 +1,11 @@
+# ORSIF - In Memory of Juan Palomar, MD
+# https://juan-palomar-tribute.orsif.org
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://juan-palomar-tribute.orsif.org/sitemap.xml
+
+# Crawl-delay (optional, be generous to search engines)
+Crawl-delay: 1
